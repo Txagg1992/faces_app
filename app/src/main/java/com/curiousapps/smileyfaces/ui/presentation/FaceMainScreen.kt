@@ -45,7 +45,7 @@ fun FaceMainScreen(
     } else {
         Column(
             modifier = Modifier.fillMaxSize()
-                .padding(16.dp).padding(top = 32.dp)
+                .padding(16.dp).padding(top = 32.dp, bottom = 16.dp)
         ) {
             LazyColumn(
                 modifier = Modifier.fillMaxSize().padding(16.dp)

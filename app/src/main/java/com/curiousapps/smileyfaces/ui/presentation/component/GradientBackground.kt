@@ -10,8 +10,8 @@ import androidx.compose.ui.graphics.Color
 
 @Composable
 fun GradientBackground(){
-    val gradient = Brush.horizontalGradient(
-        listOf(Color.Black, Color.Cyan, Color.Cyan, Color.Blue, Color.Black)
+    val gradient = Brush.verticalGradient(
+        listOf(Color.White, Color.Cyan, Color.Cyan, Color.Cyan,Color.Cyan, Color.Black)
     )
     Box(
         modifier = Modifier.background(gradient).fillMaxSize()
