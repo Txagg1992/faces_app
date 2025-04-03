@@ -40,12 +40,12 @@ fun FacesRow(
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = faceItems.group,
+                text = "Group: ${faceItems.group}",
                 fontSize = 20.sp
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = faceItems.unicodeName,
+                text = "Unicode Name: ${faceItems.unicodeName}",
                 fontStyle = FontStyle.Italic
             )
             Spacer(modifier = Modifier.height(8.dp))

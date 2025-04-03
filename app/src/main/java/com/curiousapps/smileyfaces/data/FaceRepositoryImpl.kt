@@ -11,7 +11,9 @@ class FaceRepositoryImpl @Inject constructor(
 ): FaceRepository {
     override suspend fun fetchAllFaces(): Result<List<FaceItems>> {
         try {
-            api.fetchAllFaces().let {
+            api.fetchAllFaces()
+                .sortedByDescending { it.subGroup }
+                .let {
                 return Result.success(it)
             }
         }catch (e: IOException){
